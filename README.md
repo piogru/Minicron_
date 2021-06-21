@@ -43,8 +43,11 @@ Struktura zadania w outfile:
   \<hour>:\<minutes>:\<command:\<mode>
 
   hour:minutes – Godzina i minuta wykonania programu, powinna zostać podana w formacie hh:mm.
+    
   command – Polecenie do wykonania, dopuszczane są potoki. Pojedynczy argument programu nie powinien zawierać w środku spacji np.: „tail -n5”, zamiast „tail -n 5”.
+    
   mode – Informacje, które zostaną wypisane do pliku outfile. Dopuszczalne wartości: {0, 1,2}:
-    • 0 – standardowe wyjście,
-    • 1 – wyjście błędów,
-    • 2 – standardowe wyjście i wyjście błędów.
+    
+    0 – standardowe wyjście,
+    1 – wyjście błędów,
+    2 – standardowe wyjście i wyjście błędów.
