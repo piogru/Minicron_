@@ -8,7 +8,7 @@ Demon uruchamiany w sposób następujący
 
 Plik taskfile zawiera zadania zapisane w następującym formacie:
 
-<hour>:<minutes>:<command>:<mode>
+\<hour>:\<minutes>:\<command>:\<mode>
 
 Przy czym command jest dowolnym programem.
 Parametr mode może mieć jedną z trzech wartości:
@@ -40,7 +40,7 @@ Plik taskfile zawiera zadania do wykonania przez program. Wymagane jest istnieni
 Jeśli plik outfile nie istnieje w momencie wywołania programu, zostanie utworzony. Jeśli plik outfile jest już utworzony i zawiera dane, zostaną one usunięte przed pisaniem do pliku.
 
 Struktura zadania w outfile:
-  [hour]:[minutes]:[command]:<mode>
+  \<hour>:\<minutes>:\<command:\<mode>
 
   hour:minutes – Godzina i minuta wykonania programu, powinna zostać podana w formacie hh:mm.
   command – Polecenie do wykonania, dopuszczane są potoki. Pojedynczy argument programu nie powinien zawierać w środku spacji np.: „tail -n5”, zamiast „tail -n 5”.
